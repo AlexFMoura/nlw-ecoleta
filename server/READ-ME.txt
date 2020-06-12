@@ -1,0 +1,51 @@
+instalar express
+npm install express
+
+instalar ts node para executar o projeto
+npm install ts-node -D
+
+instalar o typescript
+npm install typescript -D
+
+instalar para atualizar o servidor apos alterações
+npm install ts-node-dev -D
+
+criar o arquivo de configuração
+npx tsc --init
+
+comando para executar o pacote
+npx ts-node src/server.ts
+
+configurar "script" no package.json para run projeto
+"dev": "ts-node-dev src/server.ts"
+
+comando para executar projeto
+npm run dev
+
+Comando para criar web
+npx create-react-app web --template=typescript
+
+Conexão banco de dados
+npm install knex
+
+instalação banco
+npm install sqlite3
+
+comando criar as tabelas com knex
+npx knex migrate:latest --knexfile knexfile.ts migrate:latest
+
+configurar o comando knex no package.json para um novo comando
+npm run knex:migrate
+
+configurar seed no package.json - popular alguma tabela
+npm run knex:seed
+
+comando instalar o cors
+npm install cors
+
+instalar multer
+npm install mutlter
+
+instalção biblioteca para validação
+npm install celebrate
+npm install @types/hapi__joi

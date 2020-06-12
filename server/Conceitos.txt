@@ -1,0 +1,21 @@
+Rota: Endereço completo da requisição
+Recurso: Qual entidade estamos acessando do sistema
+
+Métodos HTTP
+
+GET: Buscar uma ou mais informações do back-Endereço
+POST: Criar uma nova informação no back-Endereço
+PUT: Atualizar uma informação existente no back-Endereço
+DELETE: Remover uma informação do back-Endereço
+
+Request Param: Parâmetros que vem na própria rota que identifica
+um Recurso;
+Query Param: Parâmetros que vem na própria rota geralmente opcionais
+para filtros, paginação
+Request Body: Parâmetros para criação/atualização de informações
+
+BAnco de DAdos
+SELECT * FROM users WHERE name = 'Alex'
+Knex('users').where('name','Alex').select('*)
+
+Migrations = Histórico do banco de dados
